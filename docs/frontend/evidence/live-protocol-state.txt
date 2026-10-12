@@ -1,0 +1,11 @@
+[
+  "Owner0x152D…746B",
+  "VERDICT tokenNot configured",
+  "Oracle signer0x5598…2982",
+  "Intake0xa43e…DE82",
+  "Payment asset0xD34a…63B7",
+  "Jury price0.5 IMD",
+  "VERDICT liability0 VERDICT",
+  "Oracle fee escrow0 IMD",
+  "Read at block26,178,172"
+]

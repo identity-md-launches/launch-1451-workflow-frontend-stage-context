@@ -1,0 +1,19 @@
+{
+  "rpc": "https://ethereum-rpc.publicnode.com",
+  "checkedAt": "2026-10-12T18:21:01.063Z",
+  "results": [
+    {
+      "id": 1,
+      "result": "0x1"
+    },
+    {
+      "id": 2,
+      "codeBytes": 1502
+    },
+    {
+      "id": 3,
+      "codeBytes": 20533
+    }
+  ],
+  "pageText": "ercentages show the share of deposited stakes, not a guaranteed probability or payout. *New markets created here request five agents and a quorum of four; inspect each case’s stored terms.\n\nThe evidence gets the final word.\n\nThe owner cannot resolve a market or withdraw its stakes. The oracle’s signed verdict settles the case.\n\nRead the process\nThe Tribunal\n\nEvidence in. Verdict out.\n\nInspect the contracts \nRead at block 26,178,149 · refreshes every 15s\nOnchain on Ethereum · Powered by IMD\n\nPositions can lose their full stake. Outcomes depend on the oracle’s evidence, signer, and Intake. USD pricing is unavailable; all values use token units."
+}

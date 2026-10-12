@@ -1,0 +1,9 @@
+{
+  "pool": [
+    "Trading fee1.25%",
+    "Tick spacing60",
+    "Active liquidityNone",
+    "Hook0x784F…6000"
+  ],
+  "quotes": "You receive · VERDICT—Estimated output"
+}

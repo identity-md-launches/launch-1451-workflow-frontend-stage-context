@@ -1,0 +1,7 @@
+{
+  "result": "PASS",
+  "cleanInstall": "npm ci",
+  "manifestSha256": "9ad39371cd082343be3d1f5ede7c0499a3624500ac3f74594c2b13cd9f47e624",
+  "unchangedFromBrowserTestedExport": true,
+  "meaning": "Rebuild after clean install produced the same manifest and all declared asset hashes."
+}

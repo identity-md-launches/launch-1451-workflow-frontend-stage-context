@@ -1,0 +1,38 @@
+[
+  {
+    "selector": "h1",
+    "foreground": "rgb(237, 236, 227)",
+    "background": "rgb(17, 19, 16)",
+    "ratio": 15.75
+  },
+  {
+    "selector": ".page-heading>p:last-child",
+    "foreground": "rgb(173, 179, 163)",
+    "background": "rgb(17, 19, 16)",
+    "ratio": 8.67
+  },
+  {
+    "selector": ".button.outline",
+    "foreground": "rgb(237, 236, 227)",
+    "background": "rgb(17, 19, 16)",
+    "ratio": 15.75
+  },
+  {
+    "selector": ".notice",
+    "foreground": "rgb(237, 236, 227)",
+    "background": "rgb(32, 36, 29)",
+    "ratio": 13.3
+  },
+  {
+    "selector": ".hint",
+    "foreground": "rgb(173, 179, 163)",
+    "background": "rgb(24, 27, 22)",
+    "ratio": 8.08
+  },
+  {
+    "selector": "input",
+    "foreground": "rgb(237, 236, 227)",
+    "background": "rgb(17, 19, 16)",
+    "ratio": 15.75
+  }
+]

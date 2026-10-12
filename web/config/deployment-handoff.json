@@ -1,0 +1,63 @@
+{
+  "chainId": 1,
+  "poolKey": {
+    "fee": 12500,
+    "hooks": "0x784ff9a3ac5d88a30bfff6f7f2a270161fbe6000",
+    "currency0": "0x7558cfdfac2d310ff740206ec6e13529b82f2a9b",
+    "currency1": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "tickSpacing": 60
+  },
+  "repoUrl": "https://github.com/identity-md-launches/launch-1435-workflow-contract-stage-context",
+  "version": 1,
+  "launchId": "926f36b9-9c40-444e-b751-3dd95b634226",
+  "manifest": {
+    "kind": "evm_project",
+    "pool": {
+      "fee": 12500,
+      "tickSpacing": 60,
+      "initialPrice": "79228162514264337593543950336",
+      "pairedCurrency": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7"
+    },
+    "notes": "LaunchToken is Verdict (VERDICT). Tribunal is the sole application and holds prediction-market bonds and bets in VERDICT. Its constructor arguments are the launch owner, Ethereum Intake v2, IMD payment asset, right-padded bytes32 oracle.request@oracle-1 action, 0.5 IMD in minor units, and the published oracle signer. The signer matches the attester returned by https://api.imd.fun/oracle/requests?limit=1 on 2026-10-12. After deployment, the owner must set the actual LaunchToken address once through setVerdictToken before markets can be created; the factory makes no initialization calls. Subsequent signer changes, and Intake, action or payment changes, require a 48-hour delay and a permissionless activation call; existing markets retain their snapshotted signer and oracle configuration. The owner has no administrative withdrawal or market-resolution function. Tribunal's settlement charge is separate from the pool's 1.25% trading fee. The factory supplies the pool and MerkleDistributor, including the initialization-only pool guard. Source publication, signed artifact linkage, admission and deployment are subsequent service responsibilities.",
+    "token": {
+      "name": "Verdict",
+      "symbol": "VERDICT",
+      "contract": "LaunchToken",
+      "decimals": 18
+    },
+    "contracts": [
+      {
+        "contract": "Tribunal",
+        "constructorArgs": [
+          "$owner",
+          "0xa43e6f75ee006411f79ac1c84120606c2330de82",
+          "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+          "0x6f7261636c652e72657175657374406f7261636c652d31000000000000000000",
+          "500000000000000000",
+          "0x5598aa9146215bc13eb26f2c692ad1461fd32982"
+        ]
+      }
+    ]
+  },
+  "contracts": [
+    {
+      "name": "LaunchToken",
+      "txHash": "0xd7958e69ef08d11e197640d94587ac60e0101e5e7f4a83c3ff60b91380c036c5",
+      "abiHash": "38880b8e56d42ce900f744a7908c7139632a49f1c3f33385c64ceaed29d37bee",
+      "address": "0x7558cfdfac2d310ff740206ec6e13529b82f2a9b",
+      "blockNumber": 26177821,
+      "creationCodeHash": "e361f6477bdc634f3b836c426471ab3d7f7ebabd227c78fb3586809893d8959c"
+    },
+    {
+      "name": "Tribunal",
+      "txHash": "0xd7958e69ef08d11e197640d94587ac60e0101e5e7f4a83c3ff60b91380c036c5",
+      "abiHash": "aec0c2b57aa6df969139950880017c12167dcabd92aa10ea71cf861014344c9f",
+      "address": "0xbebdcf6eb35b1bd004a6c123b21254d3d5b483b5",
+      "blockNumber": 26177821,
+      "creationCodeHash": "8e0ed69758d44cc8275d64e4d3d4af01649e6ff9330604a0914d17f0cf0af535"
+    }
+  ],
+  "sourceCommit": "1d54cbd46a8850a58b36fa7af28a0b1f875310d5",
+  "abiInstructions": "Build ABIs from this exact source commit; compare canonicalKeccak(abi) with abiHash. Verify deployed code on the stated chain before enabling transactions.",
+  "attestationHash": "d306304c9c0a04973c3695874eb0695d3352a556fee88a8f8111a010daa65a2a"
+}

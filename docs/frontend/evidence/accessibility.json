@@ -1,0 +1,26 @@
+[
+  {
+    "route": "markets",
+    "violations": []
+  },
+  {
+    "route": "market/1",
+    "violations": []
+  },
+  {
+    "route": "create",
+    "violations": []
+  },
+  {
+    "route": "trade",
+    "violations": []
+  },
+  {
+    "route": "protocol",
+    "violations": []
+  },
+  {
+    "route": "how",
+    "violations": []
+  }
+]

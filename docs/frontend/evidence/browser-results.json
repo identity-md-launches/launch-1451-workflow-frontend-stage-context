@@ -1,0 +1,256 @@
+{
+  "started": "2026-10-12T18:53:27.151Z",
+  "finished": "2026-10-12T18:54:03.873Z",
+  "mode": "Production export at a subpath; deterministic mocked EIP-1193 wallet and RPC. No real transactions.",
+  "checks": [
+    {
+      "name": "production export loads manifest, pinned ABI JSON and real read selectors at /preview/",
+      "status": "PASS",
+      "detail": {
+        "width": 1440,
+        "scroll": 1440,
+        "overflow": []
+      }
+    },
+    {
+      "name": "desktop keyboard skip link and native navigation work",
+      "status": "PASS"
+    },
+    {
+      "name": "market filters, title search and empty results are functional",
+      "status": "PASS"
+    },
+    {
+      "name": "wallet connection reveals onchain balances and positions",
+      "status": "PASS"
+    },
+    {
+      "name": "bet review uses the stored question and native dialog restores focus on Escape",
+      "status": "PASS"
+    },
+    {
+      "name": "exact bet approval confirms before execution and no duplicate transaction is sent",
+      "status": "PASS"
+    },
+    {
+      "name": "wallet rejection produces recoverable inline feedback without a write",
+      "status": "PASS"
+    },
+    {
+      "name": "simulation revert blocks wallet signature and exposes a useful error",
+      "status": "PASS"
+    },
+    {
+      "name": "closed bets are gated while permissionless resolution is available",
+      "status": "PASS"
+    },
+    {
+      "name": "final market claim updates eligibility and prevents a double claim",
+      "status": "PASS"
+    },
+    {
+      "name": "timeout path is gated by the deadline then can void a market",
+      "status": "PASS"
+    },
+    {
+      "name": "public attestation retry validates the payload and calls only the bound fallback",
+      "status": "PASS"
+    },
+    {
+      "name": "create form builds escaped bool/panel JSON and deposits only after two approvals",
+      "status": "PASS"
+    },
+    {
+      "name": "swap quote is a simulation and routes approvals to handoff Permit2 and router",
+      "status": "PASS"
+    },
+    {
+      "name": "sell direction reverses currencies and stale quotes require refresh",
+      "status": "PASS"
+    },
+    {
+      "name": "account change clears previous wallet state and review",
+      "status": "PASS"
+    },
+    {
+      "name": "mobile/intermediate/320px reflow has no horizontal overflow on every route",
+      "status": "PASS",
+      "detail": [
+        {
+          "route": "markets",
+          "width": 320,
+          "scroll": 320,
+          "overflow": []
+        },
+        {
+          "route": "market/1",
+          "width": 320,
+          "scroll": 320,
+          "overflow": []
+        },
+        {
+          "route": "create",
+          "width": 320,
+          "scroll": 320,
+          "overflow": []
+        },
+        {
+          "route": "trade",
+          "width": 320,
+          "scroll": 320,
+          "overflow": []
+        },
+        {
+          "route": "protocol",
+          "width": 320,
+          "scroll": 320,
+          "overflow": []
+        },
+        {
+          "route": "how",
+          "width": 320,
+          "scroll": 320,
+          "overflow": []
+        },
+        {
+          "route": "markets",
+          "width": 390,
+          "scroll": 390,
+          "overflow": []
+        },
+        {
+          "route": "market/1",
+          "width": 390,
+          "scroll": 390,
+          "overflow": []
+        },
+        {
+          "route": "create",
+          "width": 390,
+          "scroll": 390,
+          "overflow": []
+        },
+        {
+          "route": "trade",
+          "width": 390,
+          "scroll": 390,
+          "overflow": []
+        },
+        {
+          "route": "protocol",
+          "width": 390,
+          "scroll": 390,
+          "overflow": []
+        },
+        {
+          "route": "how",
+          "width": 390,
+          "scroll": 390,
+          "overflow": []
+        },
+        {
+          "route": "markets",
+          "width": 820,
+          "scroll": 820,
+          "overflow": []
+        },
+        {
+          "route": "market/1",
+          "width": 820,
+          "scroll": 820,
+          "overflow": []
+        },
+        {
+          "route": "create",
+          "width": 820,
+          "scroll": 820,
+          "overflow": []
+        },
+        {
+          "route": "trade",
+          "width": 820,
+          "scroll": 820,
+          "overflow": []
+        },
+        {
+          "route": "protocol",
+          "width": 820,
+          "scroll": 820,
+          "overflow": []
+        },
+        {
+          "route": "how",
+          "width": 820,
+          "scroll": 820,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "name": "200% text enlargement reflows, reduced motion disables spinner animation",
+      "status": "PASS",
+      "detail": {
+        "textEnlargement": "200% root font-size, not native browser zoom",
+        "reducedMotion": true
+      }
+    },
+    {
+      "name": "automated accessibility scan on all principal routes",
+      "status": "PASS",
+      "detail": [
+        {
+          "route": "markets",
+          "violations": []
+        },
+        {
+          "route": "market/1",
+          "violations": []
+        },
+        {
+          "route": "create",
+          "violations": []
+        },
+        {
+          "route": "trade",
+          "violations": []
+        },
+        {
+          "route": "protocol",
+          "violations": []
+        },
+        {
+          "route": "how",
+          "violations": []
+        }
+      ]
+    },
+    {
+      "name": "owner setup and delayed settings controls use runtime addresses",
+      "status": "PASS"
+    },
+    {
+      "name": "unknown wallet network adds the exact supplied chain then switches again",
+      "status": "PASS"
+    },
+    {
+      "name": "missing wallet and rejected connection are explained without page errors",
+      "status": "PASS"
+    },
+    {
+      "name": "missing deployed code fails closed and read outage has retry feedback",
+      "status": "PASS"
+    },
+    {
+      "name": "ABI tampering disables the application before any RPC or wallet transaction",
+      "status": "PASS"
+    },
+    {
+      "name": "no uncaught JavaScript errors or missing static resources",
+      "status": "PASS",
+      "detail": {
+        "consoleErrors": [],
+        "staticFailures": []
+      }
+    }
+  ]
+}
