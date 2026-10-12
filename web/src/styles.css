@@ -34,11 +34,13 @@
   --serif:
     "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
   --mono: "SFMono-Regular", Consolas, monospace;
-  --small: 0.8125rem;
+  --meta: 0.75rem;
+  --small: 0.875rem;
+  --subheading: 1.5rem;
   --body: 1rem;
   --display: clamp(2.65rem, 5.1vw, 4.7rem);
   --h1: clamp(2.5rem, 4vw, 3.75rem);
-  --h2: clamp(1.7rem, 2.3vw, 2.15rem);
+  --h2: 1.75rem;
   --radius: 6px;
   --space-1: 0.5rem;
   --space-2: 1rem;
@@ -209,14 +211,14 @@ pre {
 }
 .brand > span {
   font-family: var(--serif);
-  font-size: 1.6rem;
+  font-size: var(--subheading);
   line-height: 1.15;
   letter-spacing: -0.035em;
 }
 .brand small {
   display: block;
   font-family: var(--sans);
-  font-size: 0.59rem;
+  font-size: var(--meta);
   color: var(--muted);
   text-transform: uppercase;
   letter-spacing: 0.21em;
@@ -227,7 +229,7 @@ pre {
   gap: 30px;
 }
 .site-header nav a {
-  font-size: 0.875rem;
+  font-size: var(--small);
   text-decoration: none;
   padding-block: 15px;
   border-block-end: 1px solid transparent;
@@ -245,7 +247,7 @@ pre {
 }
 .wallet-select select {
   max-width: 140px;
-  font-size: 0.8125rem;
+  font-size: var(--body);
   padding: 0.5rem;
 }
 .wallet-account {
@@ -253,7 +255,7 @@ pre {
   align-items: center;
   gap: 0.5rem;
   font-family: var(--mono);
-  font-size: 0.8125rem;
+  font-size: var(--meta);
 }
 .network-bar {
   border-block: 1px solid var(--line);
@@ -265,7 +267,7 @@ pre {
   align-items: center;
   min-height: 39px;
   gap: 1rem;
-  font-size: 0.6875rem;
+  font-size: var(--meta);
   text-transform: uppercase;
   letter-spacing: 0.09em;
 }
@@ -304,7 +306,7 @@ pre {
   padding: 0.7rem 1.2rem;
   border: 1px solid transparent;
   border-radius: 4px;
-  font-size: 0.875rem;
+  font-size: var(--small);
   font-weight: 600;
   line-height: 1.5;
   text-decoration: none;
@@ -330,7 +332,7 @@ pre {
   border-color: var(--no);
 }
 .button.small {
-  font-size: 0.8125rem;
+  font-size: var(--small);
   min-height: 42px;
   padding: 0.55rem 0.85rem;
 }
@@ -360,12 +362,12 @@ pre {
   align-items: center;
   gap: 0.5rem;
   color: var(--text);
-  font-size: 0.875rem;
+  font-size: var(--small);
   text-decoration: underline;
 }
 .eyebrow {
   text-transform: uppercase;
-  font: 500 0.6875rem/1.6 var(--sans);
+  font: 500 var(--meta) / 1.6 var(--sans);
   letter-spacing: 0.16em;
   color: var(--muted);
 }
@@ -379,25 +381,18 @@ pre {
 .hero-copy {
   max-width: 790px;
 }
-.hero .eyebrow {
-  display: flex;
-  gap: 0.75rem;
-  align-items: center;
-}
-.hero .eyebrow > span {
-  width: 24px;
-  height: 1px;
-  background: var(--accent);
-}
 .hero h1 {
   font-size: var(--display);
   margin-block: 22px;
   line-height: 1.1;
 }
+.hero h1 em {
+  color: var(--accent);
+}
 .hero-description {
   color: var(--muted);
   max-width: 550px;
-  font-size: 0.9375rem;
+  font-size: var(--small);
   line-height: 1.8;
 }
 .hero-actions {
@@ -413,7 +408,7 @@ pre {
   gap: 0.5rem;
   align-items: center;
   color: var(--muted);
-  font-size: 0.75rem;
+  font-size: var(--meta);
 }
 .court-seal {
   position: relative;
@@ -441,17 +436,17 @@ pre {
 .seal-top,
 .seal-bottom {
   text-transform: uppercase;
-  font-size: 0.57rem;
+  font-size: var(--meta);
   letter-spacing: 0.14em;
 }
 .seal-stars {
-  font-size: 0.7rem;
+  font-size: var(--meta);
   line-height: 1;
 }
 .seal-side {
   position: absolute;
   font-family: var(--serif);
-  font-size: 11px;
+  font-size: var(--meta);
   left: -4px;
   top: 50%;
   background: var(--bg);
@@ -476,17 +471,17 @@ pre {
   border: 0;
 }
 .stat-label {
-  font-size: 0.625rem;
+  font-size: var(--meta);
   letter-spacing: 0.13em;
   text-transform: uppercase;
   color: var(--muted);
 }
 .stat-strip strong {
-  font: 400 1.65rem/1.3 var(--serif);
+  font: 400 var(--subheading) / 1.3 var(--serif);
   font-variant-numeric: tabular-nums;
 }
 .stat-strip small {
-  font: 400 0.75rem/1.4 var(--sans);
+  font: 400 var(--meta) / 1.4 var(--sans);
   color: var(--muted);
   margin-inline-start: 5px;
   white-space: nowrap;
@@ -505,11 +500,11 @@ pre {
   margin-block-end: 10px;
 }
 .section-heading h2 {
-  font-size: 1.8rem;
+  font-size: var(--h2);
 }
 .section-note {
   color: var(--muted);
-  font-size: 0.75rem;
+  font-size: var(--meta);
 }
 .market-toolbar {
   display: flex;
@@ -530,7 +525,7 @@ pre {
   padding: 9px 13px;
   min-height: 42px;
   color: var(--muted);
-  font-size: 0.75rem;
+  font-size: var(--small);
 }
 .filter-group button[aria-pressed="true"] {
   background: var(--raised);
@@ -551,7 +546,7 @@ pre {
 }
 .search-field input {
   padding-inline-start: 36px;
-  font-size: 0.8125rem;
+  font-size: var(--body);
   min-height: 42px;
 }
 .market-grid {
@@ -576,7 +571,7 @@ pre {
 }
 .case-number {
   text-transform: uppercase;
-  font: 0.625rem/1.5 var(--mono);
+  font: var(--meta) / 1.5 var(--mono);
   letter-spacing: 0.1em;
   color: var(--muted);
 }
@@ -589,7 +584,7 @@ pre {
   border: 1px solid var(--line);
   border-radius: 3px;
   padding: 3px 7px;
-  font-size: 0.625rem;
+  font-size: var(--meta);
   line-height: 1.6;
 }
 .badge.open {
@@ -602,7 +597,7 @@ pre {
 .market-card h3 {
   margin-block: 20px 11px;
   font-family: var(--serif);
-  font-size: 1.5rem;
+  font-size: var(--subheading);
   font-weight: 400;
   line-height: 1.4;
   overflow-wrap: anywhere;
@@ -612,20 +607,20 @@ pre {
 }
 .card-deadline {
   color: var(--muted);
-  font-size: 0.6875rem;
+  font-size: var(--meta);
   margin-block-end: 25px;
 }
 .odds-labels {
   display: flex;
   justify-content: space-between;
-  font-size: 0.6875rem;
+  font-size: var(--meta);
   gap: 1rem;
   margin-block-end: 9px;
   margin-block-start: auto;
   font-variant-numeric: tabular-nums;
 }
 .odds-labels strong {
-  font-size: 1.25rem;
+  font-size: var(--subheading);
   font-weight: 500;
   margin-inline-start: 6px;
 }
@@ -655,11 +650,11 @@ pre {
   margin-block-start: 21px;
 }
 .card-bottom > span {
-  font-size: 0.8125rem;
+  font-size: var(--small);
   font-variant-numeric: tabular-nums;
 }
 .card-bottom small {
-  font-size: 0.6875rem;
+  font-size: var(--meta);
   color: var(--muted);
 }
 .card-bottom a {
@@ -681,32 +676,26 @@ pre {
   align-items: center;
   gap: 1rem;
   margin-block-start: 25px;
-  font-size: 0.8125rem;
+  font-size: var(--small);
   flex-wrap: wrap;
 }
 .empty-state {
   text-align: center;
-  padding: 42px 24px;
+  padding: 16px 20px;
   border: 1px solid var(--line);
   background: var(--surface);
   border-radius: var(--radius);
 }
-.empty-mark {
-  display: block;
-  font: 2rem/1.2 var(--serif);
-  color: var(--muted);
-  margin-block-end: 12px;
-}
 .empty-state h3 {
   font-family: var(--serif);
-  font-size: 1.75rem;
+  font-size: var(--h2);
   font-weight: 400;
 }
 .empty-state p {
   color: var(--muted);
   max-width: 66ch;
   margin: 12px auto 20px;
-  font-size: 0.875rem;
+  font-size: var(--small);
 }
 .loading-docket {
   display: grid;
@@ -727,7 +716,7 @@ pre {
   align-items: center;
   justify-content: center;
   color: var(--muted);
-  font-size: 0.875rem;
+  font-size: var(--small);
 }
 .principle-strip {
   display: flex;
@@ -742,11 +731,11 @@ pre {
   flex-shrink: 0;
 }
 .principle-strip h2 {
-  font-size: 1.5rem;
+  font-size: var(--subheading);
 }
 .principle-strip p {
   color: var(--muted);
-  font-size: 0.8125rem;
+  font-size: var(--small);
   margin-block-start: 8px;
 }
 .principle-strip .text-link {
@@ -763,17 +752,17 @@ pre {
   padding-block-end: 22px;
 }
 .footer-top .brand span {
-  font-size: 1.35rem;
+  font-size: var(--subheading);
 }
 .footer-top p {
   color: var(--muted);
   font-family: var(--serif);
   font-style: italic;
-  font-size: 0.9375rem;
+  font-size: var(--small);
 }
 .footer-top > a:last-child {
   margin-inline-start: auto;
-  font-size: 0.75rem;
+  font-size: var(--small);
   text-decoration: none;
 }
 .footer-bottom {
@@ -783,7 +772,7 @@ pre {
   border-block-start: 1px solid var(--line);
   padding-block: 17px;
   color: var(--muted);
-  font-size: 0.625rem;
+  font-size: var(--meta);
 }
 .footer-bottom span {
   display: inline-flex;
@@ -792,7 +781,7 @@ pre {
 }
 .fine-print {
   color: var(--muted);
-  font-size: 0.625rem;
+  font-size: var(--meta);
   max-width: 120ch;
   line-height: 1.8;
 }
@@ -1488,17 +1477,6 @@ summary > svg {
   .site-header nav {
     gap: 20px;
   }
-  .court-seal {
-    width: 208px;
-    height: 208px;
-  }
-  .seal-inner {
-    gap: 13px;
-  }
-  .seal-top,
-  .seal-bottom {
-    font-size: 0.5rem;
-  }
   .hero {
     gap: 30px;
   }
@@ -1592,23 +1570,16 @@ summary > svg {
   .wrap {
     width: calc(100% - 36px);
   }
-  .brand > span {
-    font-size: 1.4rem;
-  }
   .brand > svg {
     width: 25px;
   }
   .brand {
     gap: 8px;
   }
-  .brand small {
-    font-size: 0.5rem;
-  }
   .site-header {
     gap: 14px;
   }
   .site-header .button {
-    font-size: 0.75rem;
     padding: 0.6rem 0.75rem;
     min-height: 42px;
   }
@@ -1618,17 +1589,10 @@ summary > svg {
   .site-header nav {
     gap: 28px;
   }
-  .site-header nav a {
-    font-size: 0.8125rem;
-  }
   .wallet-controls {
     gap: 0.3rem;
   }
-  .wallet-account {
-    font-size: 0.6875rem;
-  }
   .network-inner {
-    font-size: 0.5625rem;
     gap: 0.25rem;
   }
   .network-inner > span {
@@ -1638,27 +1602,18 @@ summary > svg {
     margin-inline: 0.1rem;
   }
   .hero {
-    padding-block: 42px;
-  }
-  .hero .eyebrow {
-    font-size: 0.5625rem;
-    letter-spacing: 0.12em;
-  }
-  .hero .eyebrow > span {
-    width: 16px;
+    padding-block: 16px;
   }
   .hero h1 {
     font-size: clamp(2.45rem, 9.4vw, 3.5rem);
-    margin-block: 22px;
-  }
-  .hero-description {
-    font-size: 0.875rem;
+    margin-block: 0 16px;
   }
   .hero-actions {
     gap: 18px;
+    margin-block-start: 16px;
   }
-  .hero-actions .text-link {
-    font-size: 0.8125rem;
+  .hero-note {
+    margin-block-start: 12px;
   }
   .stat-strip {
     grid-template-columns: 1fr 1fr;
@@ -1671,17 +1626,14 @@ summary > svg {
     border: 0;
     padding-inline-start: 0;
   }
-  .stat-strip strong {
-    font-size: 1.55rem;
-  }
-  .stat-strip small {
-    font-size: 0.6875rem;
-  }
   .docket-section {
-    padding-block-start: 40px;
+    padding-block-start: 16px;
+  }
+  .docket-section .section-heading,
+  .market-toolbar {
+    margin-block-end: 12px;
   }
   .section-heading h2 {
-    font-size: 1.7rem;
     line-height: 1.4;
   }
   .filter-group {
@@ -1689,16 +1641,12 @@ summary > svg {
   }
   .filter-group button {
     padding-inline: 9px;
-    font-size: 0.6875rem;
   }
   .market-grid {
     grid-template-columns: minmax(0, 1fr);
   }
   .market-card {
     padding: 22px;
-  }
-  .market-card h3 {
-    font-size: 1.65rem;
   }
   .loading-docket {
     grid-template-columns: 1fr;
@@ -1714,7 +1662,6 @@ summary > svg {
     flex: 1;
   }
   .principle-strip h2 {
-    font-size: 1.3rem;
     line-height: 1.4;
   }
   .principle-strip .text-link {
@@ -1726,15 +1673,8 @@ summary > svg {
   .footer-top .brand {
     width: 100%;
   }
-  .footer-top p {
-    font-size: 0.8125rem;
-  }
   .footer-top > a:last-child {
     margin-inline-start: auto;
-    font-size: 0.6875rem;
-  }
-  .footer-bottom {
-    font-size: 0.5625rem;
   }
   .page-section {
     padding-block: 28px 45px;
@@ -1807,12 +1747,6 @@ summary > svg {
   .section-heading {
     flex-wrap: wrap;
   }
-  .empty-state {
-    padding: 30px 20px;
-  }
-  .empty-state h3 {
-    font-size: 1.5rem;
-  }
 }
 @media (max-width: 22rem) {
   .hero h1 {
@@ -1850,19 +1784,9 @@ summary > svg {
 .search-field input {
   padding-inline-start: 36px;
 }
-.eyebrow,
-.stat-label,
-.case-number,
-.badge,
-.card-deadline,
-.odds-labels,
-.card-bottom small,
 .step-label,
 .terms-mini span,
-.definition strong,
-.footer-bottom,
-.fine-print,
-.network-inner {
+.definition strong {
   font-size: 0.75rem;
 }
 @media (max-width: 38rem) {
@@ -1870,10 +1794,6 @@ summary > svg {
     flex-wrap: wrap;
     padding-block: 7px;
     row-gap: 7px;
-    font-size: 0.6875rem;
-  }
-  .hero .eyebrow {
-    font-size: 0.6875rem;
   }
   .terms-list .address {
     font-size: 0.75rem;

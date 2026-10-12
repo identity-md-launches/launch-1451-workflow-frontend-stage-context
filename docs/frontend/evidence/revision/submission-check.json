@@ -1,0 +1,11 @@
+{
+  "result": "PASS",
+  "scope": "Only web/**, dist/** and docs/**; explicit web/.gitignore and revision .imd-responses.json exceptions; test/scratch excluded",
+  "changedOrNewFiles": 56,
+  "fullSnapshotFiles": 192,
+  "totalFileBytes": 5227306,
+  "fullSnapshotBundleBytes": 3036970,
+  "limit": 8388608,
+  "exportAssets": 8,
+  "gitCommit": "Not created in mounted checkout: .git is read-only. Size measured with a disposable complete working-tree Git snapshot; historical objects are not included."
+}

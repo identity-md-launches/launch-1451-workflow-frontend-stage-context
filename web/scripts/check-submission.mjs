@@ -14,10 +14,12 @@ const untracked = git(["ls-files", "--others", "--exclude-standard", "-z"])
 const changed = git(["diff", "HEAD", "--name-only", "-z"])
   .split("\0")
   .filter(Boolean);
+const deleted = new Set(git(["ls-files", "--deleted", "-z"]).split("\0"));
 const allowed = (p) =>
-  (p.startsWith("web/") || p.startsWith("dist/") || p.startsWith("docs/")) &&
-  (p === "web/.gitignore" ||
-    !p.split("/").some((part) => part.startsWith(".")));
+  p === ".imd-responses.json" ||
+  ((p.startsWith("web/") || p.startsWith("dist/") || p.startsWith("docs/")) &&
+    (p === "web/.gitignore" ||
+      !p.split("/").some((part) => part.startsWith("."))));
 const extras = [...changed, ...untracked].filter(
   (path) => !path.startsWith("test/scratch/"),
 );
@@ -32,7 +34,7 @@ assert.ok(
   "A submodule exists",
 );
 const submitted = [...new Set([...tracked, ...untracked.filter(allowed)])]
-  .filter((p) => !p.startsWith("test/scratch/"))
+  .filter((p) => !p.startsWith("test/scratch/") && !deleted.has(p))
   .sort();
 assert.ok(
   !submitted.some((p) =>
@@ -94,7 +96,7 @@ console.log(
     {
       result: "PASS",
       scope:
-        "Only web/**, dist/** and docs/**; explicit web/.gitignore exception; test/scratch excluded",
+        "Only web/**, dist/** and docs/**; explicit web/.gitignore and revision .imd-responses.json exceptions; test/scratch excluded",
       changedOrNewFiles: extras.length,
       fullSnapshotFiles: submitted.length,
       totalFileBytes,

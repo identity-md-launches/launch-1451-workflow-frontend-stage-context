@@ -2,7 +2,9 @@
 > the-tribunal-web@1.0.0 test:browser
 > tsx tests/browser.ts
 
+PASS empty markets and create action fit the first screen with a six-size type scale
 PASS production export loads manifest, pinned ABI JSON and real read selectors at /preview/
+PASS static social metadata loads the exported 1200 × 630 PNG at a subpath
 PASS desktop keyboard skip link and native navigation work
 PASS market filters, title search and empty results are functional
 PASS wallet connection reveals onchain balances and positions
@@ -28,7 +30,7 @@ PASS missing deployed code fails closed and read outage has retry feedback
 PASS ABI tampering disables the application before any RPC or wallet transaction
 PASS no uncaught JavaScript errors or missing static resources
 npm notice
-npm notice New major version of npm available! 11.19.0 -> 12.2.0
-npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
-npm notice To update run: npm install -g npm@12.2.0
+npm notice New minor version of npm available! 11.6.0 -> 11.21.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.0
+npm notice To update run: npm install -g npm@11.21.0
 npm notice

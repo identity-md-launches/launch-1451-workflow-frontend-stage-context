@@ -1,0 +1,51 @@
+
+> the-tribunal-web@1.0.0 build
+> npm run typecheck && vite build && node scripts/export.mjs
+
+
+> the-tribunal-web@1.0.0 typecheck
+> tsc --noEmit
+
+npm notice
+npm notice New minor version of npm available! 11.6.0 -> 11.21.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.0
+npm notice To update run: npm install -g npm@11.21.0
+npm notice
+vite v7.1.12 building for production...
+transforming...
+✓ 1985 modules transformed.
+rendering chunks...
+computing gzip size...
+../dist/index.html                   1.71 kB │ gzip:   0.67 kB
+../dist/assets/index-D0SITAkY.css   26.51 kB │ gzip:   6.10 kB
+../dist/assets/ccip-fVe2IhRV.js      2.61 kB │ gzip:   1.24 kB
+../dist/assets/index-B99FUAVp.js   561.83 kB │ gzip: 172.03 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 2.09s
+{
+  "result": "PASS",
+  "assets": 8,
+  "totalExportBytes": 705004,
+  "canonicalAbiHashes": [
+    {
+      "name": "LaunchToken",
+      "hash": "38880b8e56d42ce900f744a7908c7139632a49f1c3f33385c64ceaed29d37bee"
+    },
+    {
+      "name": "Tribunal",
+      "hash": "aec0c2b57aa6df969139950880017c12167dcabd92aa10ea71cf861014344c9f"
+    }
+  ],
+  "poolKeyExact": true,
+  "networkExact": true,
+  "sourceCommit": "1d54cbd46a8850a58b36fa7af28a0b1f875310d5"
+}
+npm notice
+npm notice New minor version of npm available! 11.6.0 -> 11.21.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.0
+npm notice To update run: npm install -g npm@11.21.0
+npm notice

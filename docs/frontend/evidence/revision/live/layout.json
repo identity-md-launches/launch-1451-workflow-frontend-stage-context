@@ -1,0 +1,719 @@
+{
+  "browser": "154.0.8037.0",
+  "url": "http://127.0.0.1:40135/preview/",
+  "views": [
+    {
+      "width": 390,
+      "height": 844,
+      "scrollY": 0,
+      "overflow": false,
+      "boxes": {
+        ".hero h1": {
+          "text": "No admins. No votes.A jury of agents.",
+          "x": 18,
+          "y": 275.34375,
+          "width": 313.59375,
+          "height": 86.21875,
+          "fontSize": "39.2px"
+        },
+        ".hero-actions .primary": {
+          "text": "Create a market",
+          "x": 18,
+          "y": 418.75,
+          "width": 172.03125,
+          "height": 46,
+          "fontSize": "14px"
+        },
+        "#docket-heading": {
+          "text": "Markets",
+          "x": 18,
+          "y": 527.9375,
+          "width": 87.453125,
+          "height": 39.1875,
+          "fontSize": "28px"
+        },
+        ".market-toolbar": {
+          "text": "All casesOpenAwaiting verdictResolvedSearch loaded markets",
+          "x": 18,
+          "y": 579.125,
+          "width": 354,
+          "height": 106.390625,
+          "fontSize": "16px"
+        },
+        ".empty-state h3": {
+          "text": "The first case is yet to be filed",
+          "x": 39,
+          "y": 714.515625,
+          "width": 312,
+          "height": 81.1875,
+          "fontSize": "28px"
+        },
+        ".stat-strip": {
+          "text": "On the docket0 marketsThe jury5 agents · 4 to agree*Minimum position100 VERDICTCreator bond10,000 VERDICT",
+          "x": 18,
+          "y": 1056.046875,
+          "width": 354,
+          "height": 228.34375,
+          "fontSize": "16px"
+        }
+      },
+      "sizes": {
+        "16px": [
+          "Skip to content"
+        ],
+        "24px": [
+          "The TribunalJudged by the swarm",
+          "0 markets",
+          "5 agents · 4 to agree*",
+          "100 VERDICT",
+          "10,000 VERDICT",
+          "The evidence gets the final word.",
+          "The Tribunal"
+        ],
+        "12px": [
+          "Judged by the swarm",
+          "Ethereum/Prediction markets",
+          "/",
+          "Onchain protocol",
+          "No consensus? Bets are refunded.",
+          "YES / NO percentages show the share of deposited stakes, not a guaranteed probability or p",
+          "On the docket",
+          "markets",
+          "The jury",
+          "agents · 4 to agree*",
+          "Minimum position",
+          "VERDICT",
+          "Creator bond",
+          "VERDICT",
+          "Read at block 26,178,442 · refreshes every 15s",
+          "Onchain on Ethereum · Powered by IMD",
+          "Positions can lose their full stake. Outcomes depend on the oracle’s evidence, signer, and"
+        ],
+        "14px": [
+          "Markets",
+          "Get VERDICT",
+          "How it works",
+          "Connect wallet",
+          "Prediction markets judged by a jury of IMD agents.",
+          "Create a market",
+          "All cases",
+          "Open",
+          "Awaiting verdict",
+          "Resolved",
+          "Start with a clear question, a fixed observation time, and evidence the jury can verify.",
+          "Create the first market",
+          "The owner cannot resolve a market or withdraw its stakes. The oracle’s signed verdict sett",
+          "Read the process",
+          "Evidence in. Verdict out.",
+          "Inspect the contracts"
+        ],
+        "39.2px": [
+          "No admins. No votes.A jury of agents.",
+          "agents."
+        ],
+        "28px": [
+          "Markets",
+          "The first case is yet to be filed"
+        ]
+      },
+      "ogImage": "./share.png",
+      "readStatus": "Read at block 26,178,442 · refreshes every 15s\nOnchain on Ethereum · Powered by IMD"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "scrollY": 0,
+      "overflow": false,
+      "boxes": {
+        ".hero h1": {
+          "text": "No admins. No votes.A jury of agents.",
+          "x": 110,
+          "y": 249,
+          "width": 587.046875,
+          "height": 161.5625,
+          "fontSize": "73.44px"
+        },
+        ".hero-actions .primary": {
+          "text": "Create a market",
+          "x": 110,
+          "y": 485.75,
+          "width": 172.03125,
+          "height": 46,
+          "fontSize": "14px"
+        },
+        "#docket-heading": {
+          "text": "Markets",
+          "x": 110,
+          "y": 697.9375,
+          "width": 87.453125,
+          "height": 35,
+          "fontSize": "28px"
+        },
+        ".market-toolbar": {
+          "text": "All casesOpenAwaiting verdictResolvedSearch loaded markets",
+          "x": 110,
+          "y": 758.9375,
+          "width": 1220,
+          "height": 48,
+          "fontSize": "16px"
+        },
+        ".empty-state h3": {
+          "text": "The first case is yet to be filed",
+          "x": 131,
+          "y": 847.9375,
+          "width": 1178,
+          "height": 40.59375,
+          "fontSize": "28px"
+        },
+        ".stat-strip": {
+          "text": "On the docket0 marketsThe jury5 agents · 4 to agree*Minimum position100 VERDICTCreator bond10,000 VERDICT",
+          "x": 110,
+          "y": 1108.09375,
+          "width": 1220,
+          "height": 107.375,
+          "fontSize": "16px"
+        }
+      },
+      "sizes": {
+        "16px": [
+          "Skip to content"
+        ],
+        "24px": [
+          "The TribunalJudged by the swarm",
+          "0 markets",
+          "5 agents · 4 to agree*",
+          "100 VERDICT",
+          "10,000 VERDICT",
+          "The evidence gets the final word.",
+          "The Tribunal"
+        ],
+        "12px": [
+          "Judged by the swarm",
+          "Ethereum/Prediction markets",
+          "/",
+          "Onchain protocol",
+          "No consensus? Bets are refunded.",
+          "Evidence above influence",
+          "✦   ✦   ✦   ✦   ✦",
+          "The IMD agent jury",
+          "V",
+          "Transparent stakes. Signed outcomes.",
+          "YES / NO percentages show the share of deposited stakes, not a guaranteed probability or p",
+          "On the docket",
+          "markets",
+          "The jury",
+          "agents · 4 to agree*",
+          "Minimum position",
+          "VERDICT",
+          "Creator bond",
+          "VERDICT",
+          "Read at block 26,178,442 · refreshes every 15s",
+          "Onchain on Ethereum · Powered by IMD",
+          "Positions can lose their full stake. Outcomes depend on the oracle’s evidence, signer, and"
+        ],
+        "14px": [
+          "Markets",
+          "Get VERDICT",
+          "How it works",
+          "Connect wallet",
+          "Prediction markets judged by a jury of IMD agents.",
+          "Create a market",
+          "All cases",
+          "Open",
+          "Awaiting verdict",
+          "Resolved",
+          "Start with a clear question, a fixed observation time, and evidence the jury can verify.",
+          "Create the first market",
+          "The owner cannot resolve a market or withdraw its stakes. The oracle’s signed verdict sett",
+          "Read the process",
+          "Evidence in. Verdict out.",
+          "Inspect the contracts"
+        ],
+        "73.44px": [
+          "No admins. No votes.A jury of agents.",
+          "agents."
+        ],
+        "28px": [
+          "Markets",
+          "The first case is yet to be filed"
+        ]
+      },
+      "ogImage": "./share.png",
+      "readStatus": "Read at block 26,178,442 · refreshes every 15s\nOnchain on Ethereum · Powered by IMD"
+    },
+    {
+      "width": 320,
+      "height": 844,
+      "scrollY": 0,
+      "overflow": false,
+      "boxes": {
+        ".hero h1": {
+          "text": "No admins. No votes.A jury of agents.",
+          "x": 18,
+          "y": 275.34375,
+          "width": 284,
+          "height": 164.625,
+          "fontSize": "39.2px"
+        },
+        ".hero-actions .primary": {
+          "text": "Create a market",
+          "x": 18,
+          "y": 522.34375,
+          "width": 172.03125,
+          "height": 46,
+          "fontSize": "14px"
+        },
+        "#docket-heading": {
+          "text": "Markets",
+          "x": 18,
+          "y": 631.53125,
+          "width": 87.453125,
+          "height": 39.1875,
+          "fontSize": "28px"
+        },
+        ".market-toolbar": {
+          "text": "All casesOpenAwaiting verdictResolvedSearch loaded markets",
+          "x": 18,
+          "y": 682.71875,
+          "width": 284,
+          "height": 151.78125,
+          "fontSize": "16px"
+        },
+        ".empty-state h3": {
+          "text": "The first case is yet to be filed",
+          "x": 39,
+          "y": 863.5,
+          "width": 242,
+          "height": 81.1875,
+          "fontSize": "28px"
+        },
+        ".stat-strip": {
+          "text": "On the docket0 marketsThe jury5 agents · 4 to agree*Minimum position100 VERDICTCreator bond10,000 VERDICT",
+          "x": 18,
+          "y": 1227.421875,
+          "width": 284,
+          "height": 247.53125,
+          "fontSize": "16px"
+        }
+      },
+      "sizes": {
+        "16px": [
+          "Skip to content"
+        ],
+        "24px": [
+          "The TribunalJudged by the swarm",
+          "0 markets",
+          "5 agents · 4 to agree*",
+          "100 VERDICT",
+          "10,000 VERDICT",
+          "The evidence gets the final word.",
+          "The Tribunal"
+        ],
+        "12px": [
+          "Judged by the swarm",
+          "Ethereum/Prediction markets",
+          "/",
+          "Onchain protocol",
+          "No consensus? Bets are refunded.",
+          "YES / NO percentages show the share of deposited stakes, not a guaranteed probability or p",
+          "On the docket",
+          "markets",
+          "The jury",
+          "agents · 4 to agree*",
+          "Minimum position",
+          "VERDICT",
+          "Creator bond",
+          "VERDICT",
+          "Read at block 26,178,442 · refreshes every 15s",
+          "Onchain on Ethereum · Powered by IMD",
+          "Positions can lose their full stake. Outcomes depend on the oracle’s evidence, signer, and"
+        ],
+        "14px": [
+          "Markets",
+          "Get VERDICT",
+          "How it works",
+          "Connect wallet",
+          "Prediction markets judged by a jury of IMD agents.",
+          "Create a market",
+          "All cases",
+          "Open",
+          "Awaiting verdict",
+          "Resolved",
+          "Start with a clear question, a fixed observation time, and evidence the jury can verify.",
+          "Create the first market",
+          "The owner cannot resolve a market or withdraw its stakes. The oracle’s signed verdict sett",
+          "Read the process",
+          "Evidence in. Verdict out.",
+          "Inspect the contracts"
+        ],
+        "39.2px": [
+          "No admins. No votes.A jury of agents.",
+          "agents."
+        ],
+        "28px": [
+          "Markets",
+          "The first case is yet to be filed"
+        ]
+      },
+      "ogImage": "./share.png",
+      "readStatus": "Read at block 26,178,442 · refreshes every 15s\nOnchain on Ethereum · Powered by IMD"
+    },
+    {
+      "width": 820,
+      "height": 900,
+      "scrollY": 0,
+      "overflow": false,
+      "boxes": {
+        ".hero h1": {
+          "text": "No admins. No votes.A jury of agents.",
+          "x": 32,
+          "y": 266.78125,
+          "width": 458.78125,
+          "height": 126.28125,
+          "fontSize": "57.4px"
+        },
+        ".hero-actions .primary": {
+          "text": "Create a market",
+          "x": 32,
+          "y": 468.25,
+          "width": 172.03125,
+          "height": 46,
+          "fontSize": "14px"
+        },
+        "#docket-heading": {
+          "text": "Markets",
+          "x": 32,
+          "y": 668.4375,
+          "width": 87.453125,
+          "height": 35,
+          "fontSize": "28px"
+        },
+        ".market-toolbar": {
+          "text": "All casesOpenAwaiting verdictResolvedSearch loaded markets",
+          "x": 32,
+          "y": 729.4375,
+          "width": 756,
+          "height": 106.390625,
+          "fontSize": "16px"
+        },
+        ".empty-state h3": {
+          "text": "The first case is yet to be filed",
+          "x": 53,
+          "y": 876.828125,
+          "width": 714,
+          "height": 40.59375,
+          "fontSize": "28px"
+        },
+        ".stat-strip": {
+          "text": "On the docket0 marketsThe jury5 agents · 4 to agree*Minimum position100 VERDICTCreator bond10,000 VERDICT",
+          "x": 32,
+          "y": 1136.984375,
+          "width": 756,
+          "height": 128.171875,
+          "fontSize": "16px"
+        }
+      },
+      "sizes": {
+        "16px": [
+          "Skip to content"
+        ],
+        "24px": [
+          "The TribunalJudged by the swarm",
+          "0 markets",
+          "5 agents · 4 to agree*",
+          "100 VERDICT",
+          "10,000 VERDICT",
+          "The evidence gets the final word.",
+          "The Tribunal"
+        ],
+        "12px": [
+          "Judged by the swarm",
+          "Ethereum/Prediction markets",
+          "/",
+          "Onchain protocol",
+          "No consensus? Bets are refunded.",
+          "YES / NO percentages show the share of deposited stakes, not a guaranteed probability or p",
+          "On the docket",
+          "markets",
+          "The jury",
+          "agents · 4 to agree*",
+          "Minimum position",
+          "VERDICT",
+          "Creator bond",
+          "VERDICT",
+          "Read at block 26,178,442 · refreshes every 15s",
+          "Onchain on Ethereum · Powered by IMD",
+          "Positions can lose their full stake. Outcomes depend on the oracle’s evidence, signer, and"
+        ],
+        "14px": [
+          "Markets",
+          "Get VERDICT",
+          "How it works",
+          "Connect wallet",
+          "Prediction markets judged by a jury of IMD agents.",
+          "Create a market",
+          "All cases",
+          "Open",
+          "Awaiting verdict",
+          "Resolved",
+          "Start with a clear question, a fixed observation time, and evidence the jury can verify.",
+          "Create the first market",
+          "The owner cannot resolve a market or withdraw its stakes. The oracle’s signed verdict sett",
+          "Read the process",
+          "Evidence in. Verdict out.",
+          "Inspect the contracts"
+        ],
+        "57.4px": [
+          "No admins. No votes.A jury of agents.",
+          "agents."
+        ],
+        "28px": [
+          "Markets",
+          "The first case is yet to be filed"
+        ]
+      },
+      "ogImage": "./share.png",
+      "readStatus": "Read at block 26,178,442 · refreshes every 15s\nOnchain on Ethereum · Powered by IMD"
+    },
+    {
+      "width": 1024,
+      "height": 900,
+      "scrollY": 0,
+      "overflow": false,
+      "boxes": {
+        ".hero h1": {
+          "text": "No admins. No votes.A jury of agents.",
+          "x": 32,
+          "y": 249,
+          "width": 417.4375,
+          "height": 114.875,
+          "fontSize": "52.224px"
+        },
+        ".hero-actions .primary": {
+          "text": "Create a market",
+          "x": 32,
+          "y": 439.0625,
+          "width": 172.03125,
+          "height": 46,
+          "fontSize": "14px"
+        },
+        "#docket-heading": {
+          "text": "Markets",
+          "x": 32,
+          "y": 651.25,
+          "width": 87.453125,
+          "height": 35,
+          "fontSize": "28px"
+        },
+        ".market-toolbar": {
+          "text": "All casesOpenAwaiting verdictResolvedSearch loaded markets",
+          "x": 32,
+          "y": 712.25,
+          "width": 960,
+          "height": 48,
+          "fontSize": "16px"
+        },
+        ".empty-state h3": {
+          "text": "The first case is yet to be filed",
+          "x": 53,
+          "y": 801.25,
+          "width": 918,
+          "height": 40.59375,
+          "fontSize": "28px"
+        },
+        ".stat-strip": {
+          "text": "On the docket0 marketsThe jury5 agents · 4 to agree*Minimum position100 VERDICTCreator bond10,000 VERDICT",
+          "x": 32,
+          "y": 1061.40625,
+          "width": 960,
+          "height": 128.171875,
+          "fontSize": "16px"
+        }
+      },
+      "sizes": {
+        "16px": [
+          "Skip to content"
+        ],
+        "24px": [
+          "The TribunalJudged by the swarm",
+          "0 markets",
+          "5 agents · 4 to agree*",
+          "100 VERDICT",
+          "10,000 VERDICT",
+          "The evidence gets the final word.",
+          "The Tribunal"
+        ],
+        "12px": [
+          "Judged by the swarm",
+          "Ethereum/Prediction markets",
+          "/",
+          "Onchain protocol",
+          "No consensus? Bets are refunded.",
+          "Evidence above influence",
+          "✦   ✦   ✦   ✦   ✦",
+          "The IMD agent jury",
+          "V",
+          "YES / NO percentages show the share of deposited stakes, not a guaranteed probability or p",
+          "On the docket",
+          "markets",
+          "The jury",
+          "agents · 4 to agree*",
+          "Minimum position",
+          "VERDICT",
+          "Creator bond",
+          "VERDICT",
+          "Read at block 26,178,442 · refreshes every 15s",
+          "Onchain on Ethereum · Powered by IMD",
+          "Positions can lose their full stake. Outcomes depend on the oracle’s evidence, signer, and"
+        ],
+        "14px": [
+          "Markets",
+          "Get VERDICT",
+          "How it works",
+          "Connect wallet",
+          "Prediction markets judged by a jury of IMD agents.",
+          "Create a market",
+          "All cases",
+          "Open",
+          "Awaiting verdict",
+          "Resolved",
+          "Start with a clear question, a fixed observation time, and evidence the jury can verify.",
+          "Create the first market",
+          "The owner cannot resolve a market or withdraw its stakes. The oracle’s signed verdict sett",
+          "Read the process",
+          "Evidence in. Verdict out.",
+          "Inspect the contracts"
+        ],
+        "52.224px": [
+          "No admins. No votes.A jury of agents.",
+          "agents."
+        ],
+        "28px": [
+          "Markets",
+          "The first case is yet to be filed"
+        ]
+      },
+      "ogImage": "./share.png",
+      "readStatus": "Read at block 26,178,442 · refreshes every 15s\nOnchain on Ethereum · Powered by IMD"
+    }
+  ],
+  "errors": [],
+  "requests": [
+    {
+      "url": "http://127.0.0.1:40135/preview/",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:40135/preview/assets/index-D0SITAkY.css",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:40135/preview/assets/index-B99FUAVp.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:40135/preview/imd-deployment.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:40135/preview/favicon.svg",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:40135/preview/abi/LaunchToken.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:40135/preview/abi/Tribunal.json",
+      "status": 200
+    },
+    {
+      "url": "https://ethereum-rpc.publicnode.com/",
+      "status": 200
+    },
+    {
+      "url": "https://ethereum-rpc.publicnode.com/",
+      "status": 200
+    },
+    {
+      "url": "https://ethereum-rpc.publicnode.com/",
+      "status": 200
+    },
+    {
+      "url": "https://ethereum-rpc.publicnode.com/",
+      "status": 200
+    },
+    {
+      "url": "https://ethereum-rpc.publicnode.com/",
+      "status": 200
+    },
+    {
+      "url": "https://ethereum-rpc.publicnode.com/",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:40135/preview/",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:40135/preview/assets/index-D0SITAkY.css",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:40135/preview/assets/index-B99FUAVp.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:40135/preview/favicon.svg",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:40135/preview/imd-deployment.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:40135/preview/abi/LaunchToken.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:40135/preview/abi/Tribunal.json",
+      "status": 200
+    },
+    {
+      "url": "https://ethereum-rpc.publicnode.com/",
+      "status": 200
+    },
+    {
+      "url": "https://ethereum-rpc.publicnode.com/",
+      "status": 200
+    },
+    {
+      "url": "https://ethereum-rpc.publicnode.com/",
+      "status": 200
+    },
+    {
+      "url": "https://ethereum-rpc.publicnode.com/",
+      "status": 200
+    },
+    {
+      "url": "https://ethereum-rpc.publicnode.com/",
+      "status": 200
+    },
+    {
+      "url": "https://ethereum-rpc.publicnode.com/",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:40135/preview/favicon.svg",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:40135/preview/share.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:40135/preview/share.png",
+      "status": 200
+    }
+  ]
+}

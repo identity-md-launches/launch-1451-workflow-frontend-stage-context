@@ -1,0 +1,14 @@
+{
+  "interaction": {
+    "skipLink": true,
+    "createKeyboardNavigation": true,
+    "urlHash": "#create"
+  },
+  "social": {
+    "path": "./share.png",
+    "status": 200,
+    "contentType": "image/png",
+    "width": 1200,
+    "height": 630
+  }
+}

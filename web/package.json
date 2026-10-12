@@ -11,6 +11,7 @@
     "verify": "node scripts/verify.mjs",
     "test": "tsx --test tests/*.test.ts",
     "test:browser": "tsx tests/browser.ts",
+    "share:image": "tsx scripts/share-image.ts",
     "format:check": "prettier --check src scripts tests vite.config.ts tsconfig.json package.json index.html"
   },
   "dependencies": {

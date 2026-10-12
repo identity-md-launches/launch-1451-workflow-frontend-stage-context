@@ -104,6 +104,7 @@ async function fixture(
             css: "text/css",
             json: "application/json",
             svg: "image/svg+xml",
+            png: "image/png",
           } as Record<string, string>
         )[extension!] ?? "application/octet-stream";
       await route.fulfill({ status: 200, contentType: mime, body: bytes });
@@ -291,6 +292,74 @@ async function noOverflow(page: Page) {
 }
 let contexts: BrowserContext[] = [];
 try {
+  await check(
+    "empty markets and create action fit the first screen with a six-size type scale",
+    async () => {
+      const empty = new MockChain();
+      empty.markets.clear();
+      const f = await fixture(empty, { noWallet: true });
+      contexts.push(f.context);
+      const results = [];
+      for (const [width, height] of [
+        [390, 844],
+        [1440, 900],
+      ]) {
+        await f.page.setViewportSize({ width, height });
+        await expect(f.page.locator(".empty-state h3")).toHaveText(
+          "The first case is yet to be filed",
+        );
+        await f.page.evaluate(() => scrollTo(0, 0));
+        const measurement = await f.page.evaluate(() => {
+          const selectors = [
+            ".hero-actions .primary",
+            "#docket-heading",
+            ".market-toolbar",
+            ".empty-state h3",
+          ];
+          const boxes = selectors.map((selector) => {
+            const rect = document
+              .querySelector(selector)!
+              .getBoundingClientRect();
+            return { selector, top: rect.top, bottom: rect.bottom };
+          });
+          const sizes = [
+            ...new Set(
+              Array.from(document.body.querySelectorAll<HTMLElement>("*"))
+                .filter(
+                  (e) =>
+                    e.checkVisibility() &&
+                    !e.closest(".sr-only") &&
+                    Array.from(e.childNodes).some(
+                      (n) =>
+                        n.nodeType === Node.TEXT_NODE && n.textContent?.trim(),
+                    ),
+                )
+                .map((e) => getComputedStyle(e).fontSize),
+            ),
+          ];
+          return {
+            width: innerWidth,
+            height: innerHeight,
+            scrollY,
+            boxes,
+            sizes,
+          };
+        });
+        assert.equal(measurement.scrollY, 0);
+        assert.ok(
+          measurement.boxes.every(
+            (box) => box.top >= 0 && box.bottom <= height,
+          ),
+          JSON.stringify(measurement),
+        );
+        assert.ok(measurement.sizes.length <= 6, JSON.stringify(measurement));
+        await noOverflow(f.page);
+        results.push(measurement);
+      }
+      await f.context.close();
+      return results;
+    },
+  );
   const f = await fixture();
   contexts.push(f.context);
   const { page, chain } = f;
@@ -307,6 +376,43 @@ try {
         fullPage: true,
       });
       return noOverflow(page);
+    },
+  );
+  await check(
+    "static social metadata loads the exported 1200 × 630 PNG at a subpath",
+    async () => {
+      const preview = await page.evaluate(async () => {
+        const meta = (selector: string) =>
+          document.querySelector<HTMLMetaElement>(selector)!.content;
+        const source = meta('meta[property="og:image"]');
+        const response = await fetch(new URL(source, document.baseURI));
+        const image = new Image();
+        image.src = source;
+        await image.decode();
+        return {
+          source,
+          status: response.status,
+          mime: response.headers.get("content-type"),
+          width: image.naturalWidth,
+          height: image.naturalHeight,
+          card: meta('meta[name="twitter:card"]'),
+          twitterImage: meta('meta[name="twitter:image"]'),
+          declaredWidth: meta('meta[property="og:image:width"]'),
+          declaredHeight: meta('meta[property="og:image:height"]'),
+        };
+      });
+      assert.deepEqual(preview, {
+        source: "./share.png",
+        status: 200,
+        mime: "image/png",
+        width: 1200,
+        height: 630,
+        card: "summary_large_image",
+        twitterImage: "./share.png",
+        declaredWidth: "1200",
+        declaredHeight: "630",
+      });
+      return preview;
     },
   );
   await check(
@@ -424,11 +530,14 @@ try {
     "wallet rejection produces recoverable inline feedback without a write",
     async () => {
       await page.getByRole("button", { name: "Bet NO", exact: true }).click();
-      await page
-        .getByLabel(
-          "I have read the exact oracle question, observation time, and stored trust dependencies.",
-        )
-        .check();
+      const termsCheckbox = page.getByLabel(
+        "I have read the exact oracle question, observation time, and stored trust dependencies.",
+      );
+      await expect(termsCheckbox).not.toBeChecked();
+      await termsCheckbox.check();
+      await expect(
+        page.getByRole("button", { name: "Approve VERDICT", exact: true }),
+      ).toBeEnabled();
       await transact(page, "Approve VERDICT");
       const before = chain.writes.length;
       await page.evaluate(() => {

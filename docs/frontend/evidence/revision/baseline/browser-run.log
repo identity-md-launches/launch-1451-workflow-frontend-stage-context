@@ -1,0 +1,130 @@
+PASS production export loads manifest, pinned ABI JSON and real read selectors at /preview/
+PASS desktop keyboard skip link and native navigation work
+PASS market filters, title search and empty results are functional
+PASS wallet connection reveals onchain balances and positions
+PASS bet review uses the stored question and native dialog restores focus on Escape
+PASS exact bet approval confirms before execution and no duplicate transaction is sent
+FAIL wallet rejection produces recoverable inline feedback without a write Je [Error]: expect(locator).toBeEnabled() failed
+
+Locator:  getByRole('button', { name: 'Approve VERDICT', exact: true }).first()
+Expected: enabled
+Received: disabled
+Timeout:  15000ms
+
+Call log:
+  - Expect "to.be.enabled" with timeout 15000ms
+  - waiting for getByRole('button', { name: 'Approve VERDICT', exact: true }).first()
+    19 × locator resolved to <button disabled type="button" class="button primary  full">Approve VERDICT</button>
+       - unexpected value "disabled"
+
+    at Proxy.<anonymous> (/home/seat/.identitymd/work/0bc57193-3108-4dcf-93e5-6f2e67b8e4c1/76b7541f-a78c-48c1-8d86-8cff49c72e10/web/node_modules/playwright/lib/matchers/expect.js:221:24)
+    at transact (/tmp/tribunal-review/browser.ts:230:24)
+    at async <anonymous> (/tmp/tribunal-review/browser.ts:432:7)
+    at async check (/tmp/tribunal-review/browser.ts:63:18)
+    at async <anonymous> (/tmp/tribunal-review/browser.ts:423:3) {
+  matcherResult: {
+    message: 'expect(locator).toBeEnabled() failed\n' +
+      '\n' +
+      "Locator:  getByRole('button', { name: 'Approve VERDICT', exact: true }).first()\n" +
+      'Expected: enabled\n' +
+      'Received: disabled\n' +
+      'Timeout:  15000ms\n' +
+      '\n' +
+      'Call log:\n' +
+      '  - Expect "to.be.enabled" with timeout 15000ms\n' +
+      "  - waiting for getByRole('button', { name: 'Approve VERDICT', exact: true }).first()\n" +
+      '    19 × locator resolved to <button disabled type="button" class="button primary  full">Approve VERDICT</button>\n' +
+      '       - unexpected value "disabled"\n',
+    pass: false,
+    actual: 'disabled',
+    name: 'toBeEnabled',
+    expected: 'enabled',
+    log: [
+      '  - Expect "to.be.enabled" with timeout 15000ms',
+      "  - waiting for getByRole('button', { name: 'Approve VERDICT', exact: true }).first()",
+      '    19 × locator resolved to <button disabled type="button" class="button primary  full">Approve VERDICT</button>',
+      '       - unexpected value "disabled"'
+    ],
+    timeout: 15000
+  }
+}
+CONSOLE []
+PAGE {
+  errors: [],
+  text: 'Skip to content\n' +
+    'The Tribunal\n' +
+    'JUDGED BY THE SWARM\n' +
+    'Markets\n' +
+    'Get VERDICT\n' +
+    'How it works\n' +
+    '0x1111…1111\n' +
+    'Disconnect\n' +
+    'ETHEREUM\n' +
+    '/\n' +
+    'PREDICTION MARKETS\n' +
+    'ONCHAIN PROTOCOL\n' +
+    'All markets\n' +
+    '\n' +
+    'CASE 001 · THE PUBLIC RECORD\n' +
+    '\n' +
+    'Open\n' +
+    'Will the orbital research mission launch before the deadline?\n' +
+    '\n' +
+    'THE EXACT QUESTION FOR THE JURY\n' +
+    '\n' +
+    'Will the orbital research mission launch before the deadline? Use the fixed observation time and the official public record in the definitions.\n' +
+    '\n' +
+    'OBSERVATION\n' +
+    '2026-10-12T21:11:59.000Z\n' +
+    '\n' +
+    'EVIDENCE\n' +
+    'Official public event record (mocked test data)\n' +
+    '\n' +
+    'CRITERIA\n' +
+    'YES requires a dated public confirmation by the observation time.\n' +
+    '\n' +
+    'Evidence window: 24 hours at oracle processing time. The observation definition fixes the event being judged; the resolution time alone does not.\n' +
+    '\n' +
+    '5 agents\n' +
+    '4 must agree\n' +
+    'Boolean verdict\n' +
+    'Creator\n' +
+    '0x2222…2222\n' +
+    'Stored Intake\n' +
+    '0xa43e…DE82\n' +
+    'Stored signer\n' +
+    '0x5598…2982\n' +
+    'Fee asset\n' +
+    '0xD34a…63B7\n' +
+    'Oracle action\n' +
+    'oracle.request@oracle-1\n' +
+    'Inspect the stored oracle JSON\n' +
+    'Check the stored Intake, signer, question, and evidence before betting. Existing markets retain these dependencies even after owner configuration changes.\n' +
+    'The timeline\n' +
+    '1\n' +
+    'Betting closes\n' +
+    '\n' +
+    '12 Oct 2026, 20:11 UTC\n' +
+    '\n' +
+    '2\n' +
+    'Jury can be summoned\n' +
+    '\n' +
+    '12 Oc',
+  walletLog: [
+    { method: 'eth_requestAccounts' },
+    { method: 'eth_chainId' },
+    { method: 'eth_chainId' },
+    { method: 'eth_accounts' },
+    { method: 'eth_chainId' },
+    { method: 'eth_accounts' },
+    { method: 'eth_chainId' },
+    { method: 'eth_sendTransaction', params: [Array] },
+    { method: 'eth_chainId' },
+    { method: 'eth_accounts' },
+    { method: 'eth_chainId' },
+    { method: 'eth_accounts' },
+    { method: 'eth_chainId' },
+    { method: 'eth_sendTransaction', params: [Array] }
+  ],
+  hasProvider: true
+}

@@ -1,0 +1,6 @@
+{
+  "result": "PASS",
+  "browserTestedManifestSha256": "da6ad34010f4ff4d26a3380cd2a0cc3caa484f0e9d807749a800103bbe790ffb",
+  "rebuiltManifestSha256": "da6ad34010f4ff4d26a3380cd2a0cc3caa484f0e9d807749a800103bbe790ffb",
+  "assetHashesIdentical": true
+}

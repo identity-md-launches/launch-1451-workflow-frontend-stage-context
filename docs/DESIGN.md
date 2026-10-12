@@ -36,8 +36,8 @@ Gold is the product accent; green and rose distinguish outcomes and status. Text
 - Body: 16px root, unitless 1.6 line height. Body copy is usually 14–16px; long explanations cap at 66–74ch.
 - Main hero: `clamp(2.65rem, 5.1vw, 4.7rem)`, regular serif, 1.1 line height, negative tracking. Narrowest layouts increase its line height to 1.4 when it wraps to three lines.
 - Other page headings: `clamp(2.5rem, 4vw, 3.75rem)`, 1.15 line height. Case headings use 1.4 on mobile for long questions.
-- Section headings: serif, generally 1.65–2.15rem. Card headings are serif 1.5rem (1.65rem on mobile) with 1.4 line height. Supporting headings use 1.0625rem semibold sans.
-- Substantive supporting labels/hints generally use 12px; dense mobile navigation context is 11px. Only the decorative seal and brand subtitle are smaller.
+- The market homepage and shared chrome use six sizes: `--meta: 0.75rem` (12px metadata, strapline and seal), `--small: 0.875rem` (14px controls/supporting prose), `--body: 1rem` (16px body/inputs), `--subheading: 1.5rem` (24px statistics, brand, market cards and principle heading), `--h2: 1.75rem` (28px section/empty-state headings), and the responsive hero display size. These roles keep their size across breakpoints; narrower rules change layout instead.
+- Other page-specific display headings retain their existing sizes; supporting headings outside the market view use 1.0625rem semibold sans. Supporting labels/hints generally use 12px.
 - Inputs are 16px or larger at all widths. Balances, percentages and deadlines use tabular numerals. Addresses and hashes use the mono stack, isolate bidirectional text and wrap as needed.
 
 Headings use balanced wrapping; paragraphs use pretty wrapping. Questions and evidence preserve whitespace and wrap arbitrary strings. Useful text remains selectable. No consequential question is line-clamped or replaced by a truncated title.
@@ -45,6 +45,8 @@ Headings use balanced wrapping; paragraphs use pretty wrapping. Questions and ev
 ## Layout
 
 `.wrap` aligns the site to a maximum 1220px content width, normally inset 48px on each side. Insets reduce to 32px and then 18px. Spacing uses an 8px-oriented rhythm with explicit optical values; related controls typically have 8–12px gaps and major groups 24–32px gaps. This is plain CSS, not a utility framework.
+
+The homepage places its short hero and primary Create a market link before the Markets heading, filters/search and live docket. The statistics follow the docket. At `38rem`, hero padding is 16px, its heading margin is 0 0 16px, action/note top margins are 16px/12px, and docket top padding and heading/toolbar bottom margins are 16px/12px. Empty states use 16px 20px padding without a decorative marker. The hero keeps its required wording and gold italic agents emphasis.
 
 The docket uses three columns at wide desktop sizes, two at `72rem`, and one at `38rem`. Case and creation pages begin as evidence/form plus action sidebar, then stack at `56rem`. Case action panels temporarily form two columns at intermediate widths and stack at `38rem`. Trading becomes a single column at `56rem`, capped at 600px. Protocol panels stack at `56rem`; owner-setting pairs stack at `38rem`. The how-it-works grid changes from four to two to one columns.
 
@@ -75,6 +77,8 @@ Panels use `--radius: 6px`; buttons and inputs use 4px; compact badges use 3px. 
 | `CourtSeal`, `components/Shell.tsx` | Decorative only, hidden from assistive technology. Not a certification mark. |
 
 All primary controls use native buttons or links. Keyboard focus is a visible 2px `--focus` outline with 4px offset; forced-colors mode uses the system Highlight color. The skip link becomes visible on focus. There is no autoplay or staged entrance. Color/border hover transitions last 150ms and spinners run only under `prefers-reduced-motion: no-preference`; the pending text remains in reduced-motion mode. Screen-reader sessions and native mobile wallet applications were not tested.
+
+`web/public/share.png` is a 1200 × 630 social preview built from the same palette, system typography and `CourtSeal`. Regenerate it with `npm --prefix web run share:image`; the source is `web/scripts/share-image.ts`. It is copied to `dist/share.png`, declared in static Open Graph/Twitter metadata and hashed by the export manifest.
 
 ## Do's and Don'ts
 

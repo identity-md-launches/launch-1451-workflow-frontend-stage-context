@@ -1,0 +1,44 @@
+[
+  {
+    "selector": ".hero h1",
+    "foreground": "rgb(237, 236, 227)",
+    "background": "rgb(17, 19, 16)",
+    "ratio": 15.75
+  },
+  {
+    "selector": ".hero h1 em",
+    "foreground": "rgb(217, 188, 131)",
+    "background": "rgb(17, 19, 16)",
+    "ratio": 10.2
+  },
+  {
+    "selector": ".hero-description",
+    "foreground": "rgb(173, 179, 163)",
+    "background": "rgb(17, 19, 16)",
+    "ratio": 8.67
+  },
+  {
+    "selector": ".hero-actions .primary",
+    "foreground": "rgb(17, 19, 16)",
+    "background": "rgb(217, 188, 131)",
+    "ratio": 10.2
+  },
+  {
+    "selector": ".empty-state h3",
+    "foreground": "rgb(237, 236, 227)",
+    "background": "rgb(24, 27, 22)",
+    "ratio": 14.67
+  },
+  {
+    "selector": ".empty-state p",
+    "foreground": "rgb(173, 179, 163)",
+    "background": "rgb(24, 27, 22)",
+    "ratio": 8.08
+  },
+  {
+    "selector": ".filter-group button",
+    "foreground": "rgb(237, 236, 227)",
+    "background": "rgb(32, 36, 29)",
+    "ratio": 13.3
+  }
+]

@@ -1,0 +1,41 @@
+{
+  "started": "2026-10-12T19:11:59.070Z",
+  "finished": "2026-10-12T19:12:17.243Z",
+  "mode": "Production export at a subpath; deterministic mocked EIP-1193 wallet and RPC. No real transactions.",
+  "checks": [
+    {
+      "name": "production export loads manifest, pinned ABI JSON and real read selectors at /preview/",
+      "status": "PASS",
+      "detail": {
+        "width": 1440,
+        "scroll": 1440,
+        "overflow": []
+      }
+    },
+    {
+      "name": "desktop keyboard skip link and native navigation work",
+      "status": "PASS"
+    },
+    {
+      "name": "market filters, title search and empty results are functional",
+      "status": "PASS"
+    },
+    {
+      "name": "wallet connection reveals onchain balances and positions",
+      "status": "PASS"
+    },
+    {
+      "name": "bet review uses the stored question and native dialog restores focus on Escape",
+      "status": "PASS"
+    },
+    {
+      "name": "exact bet approval confirms before execution and no duplicate transaction is sent",
+      "status": "PASS"
+    },
+    {
+      "name": "wallet rejection produces recoverable inline feedback without a write",
+      "status": "FAIL",
+      "detail": "Error: expect(locator).toBeEnabled() failed\n\nLocator:  getByRole('button', { name: 'Approve VERDICT', exact: true }).first()\nExpected: enabled\nReceived: disabled\nTimeout:  15000ms\n\nCall log:\n  - Expect \"to.be.enabled\" with timeout 15000ms\n  - waiting for getByRole('button', { name: 'Approve VERDICT', exact: true }).first()\n    19 × locator resolved to <button disabled type=\"button\" class=\"button primary  full\">Approve VERDICT</button>\n       - unexpected value \"disabled\"\n\n    at Proxy.<anonymous> (/home/seat/.identitymd/work/0bc57193-3108-4dcf-93e5-6f2e67b8e4c1/76b7541f-a78c-48c1-8d86-8cff49c72e10/web/node_modules/playwright/lib/matchers/expect.js:221:24)\n    at transact (/tmp/tribunal-review/browser.ts:230:24)\n    at async <anonymous> (/tmp/tribunal-review/browser.ts:432:7)\n    at async check (/tmp/tribunal-review/browser.ts:63:18)\n    at async <anonymous> (/tmp/tribunal-review/browser.ts:423:3)"
+    }
+  ]
+}

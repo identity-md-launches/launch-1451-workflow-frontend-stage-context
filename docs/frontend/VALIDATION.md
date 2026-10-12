@@ -1,5 +1,7 @@
 # Frontend validation — The Tribunal
 
+> This is the initial accepted delivery record. The subsequent review fixes, final export totals and rerun evidence are documented in [REVISION.md](REVISION.md). The root `evidence/` browser outputs have been refreshed; baseline revision reproductions are retained in `evidence/revision/`.
+
 Worker validation performed on 2026-10-12. This is evidence of the checks described here, not independent certification, publication verification, or a contract audit. No real transaction was broadcast; contracts and protected repository files were not changed.
 
 ## Delivered artifacts and provenance

@@ -85,26 +85,17 @@ export function Markets() {
     <>
       <section className="hero">
         <div className="hero-copy">
-          <p className="eyebrow">
-            <span />
-            An open court for uncertain outcomes
-          </p>
           <h1>
             No admins. No votes.
             <br />A jury of <em>agents.</em>
           </h1>
           <p className="hero-description">
-            Put your conviction on the record. Take a position on real-world
-            events. An independent panel of IMD agents examines the evidence and
-            signs the verdict.
+            Prediction markets judged by a jury of IMD agents.
           </p>
           <div className="hero-actions">
             <a className="button primary" href="#create">
               <Plus size={17} aria-hidden="true" />
               Create a market
-            </a>
-            <a className="text-link" href="#how">
-              How the jury works <ArrowRight size={16} aria-hidden="true" />
             </a>
           </div>
           <div className="hero-note">
@@ -114,41 +105,9 @@ export function Markets() {
         </div>
         <CourtSeal />
       </section>
-      <div className="stat-strip">
-        <div>
-          <span className="stat-label">On the docket</span>
-          <strong>
-            {state ? state.marketCount.toLocaleString() : "—"}{" "}
-            <small>markets</small>
-          </strong>
-        </div>
-        <div>
-          <span className="stat-label">The jury</span>
-          <strong>
-            5 <small>agents · 4 to agree*</small>
-          </strong>
-        </div>
-        <div>
-          <span className="stat-label">Minimum position</span>
-          <strong>
-            {state ? units(state.minBet, state.token.decimals, 0) : "100"}{" "}
-            <small>VERDICT</small>
-          </strong>
-        </div>
-        <div>
-          <span className="stat-label">Creator bond</span>
-          <strong>
-            {state ? units(state.bond, state.token.decimals, 0) : "10,000"}{" "}
-            <small>VERDICT</small>
-          </strong>
-        </div>
-      </div>
       <section className="docket-section" aria-labelledby="docket-heading">
         <div className="section-heading">
-          <div>
-            <p className="eyebrow">The public docket</p>
-            <h2 id="docket-heading">Every question deserves a hearing.</h2>
-          </div>
+          <h2 id="docket-heading">Markets</h2>
           <span className="section-note">
             Transparent stakes. Signed outcomes.
           </span>
@@ -262,6 +221,35 @@ export function Markets() {
           five agents and a quorum of four; inspect each case’s stored terms.
         </p>
       </section>
+      <div className="stat-strip">
+        <div>
+          <span className="stat-label">On the docket</span>
+          <strong>
+            {state ? state.marketCount.toLocaleString() : "—"}{" "}
+            <small>markets</small>
+          </strong>
+        </div>
+        <div>
+          <span className="stat-label">The jury</span>
+          <strong>
+            5 <small>agents · 4 to agree*</small>
+          </strong>
+        </div>
+        <div>
+          <span className="stat-label">Minimum position</span>
+          <strong>
+            {state ? units(state.minBet, state.token.decimals, 0) : "100"}{" "}
+            <small>VERDICT</small>
+          </strong>
+        </div>
+        <div>
+          <span className="stat-label">Creator bond</span>
+          <strong>
+            {state ? units(state.bond, state.token.decimals, 0) : "10,000"}{" "}
+            <small>VERDICT</small>
+          </strong>
+        </div>
+      </div>
       <section className="principle-strip">
         <Gavel size={33} strokeWidth={1.2} aria-hidden="true" />
         <div>

@@ -1,8 +1,84 @@
 {
-  "started": "2026-10-12T18:53:27.151Z",
-  "finished": "2026-10-12T18:54:03.873Z",
+  "started": "2026-10-12T19:19:30.893Z",
+  "finished": "2026-10-12T19:20:04.480Z",
   "mode": "Production export at a subpath; deterministic mocked EIP-1193 wallet and RPC. No real transactions.",
   "checks": [
+    {
+      "name": "empty markets and create action fit the first screen with a six-size type scale",
+      "status": "PASS",
+      "detail": [
+        {
+          "width": 390,
+          "height": 844,
+          "scrollY": 0,
+          "boxes": [
+            {
+              "selector": ".hero-actions .primary",
+              "top": 418.75,
+              "bottom": 464.75
+            },
+            {
+              "selector": "#docket-heading",
+              "top": 527.9375,
+              "bottom": 567.125
+            },
+            {
+              "selector": ".market-toolbar",
+              "top": 579.125,
+              "bottom": 685.515625
+            },
+            {
+              "selector": ".empty-state h3",
+              "top": 714.515625,
+              "bottom": 795.703125
+            }
+          ],
+          "sizes": [
+            "16px",
+            "24px",
+            "12px",
+            "14px",
+            "39.2px",
+            "28px"
+          ]
+        },
+        {
+          "width": 1440,
+          "height": 900,
+          "scrollY": 0,
+          "boxes": [
+            {
+              "selector": ".hero-actions .primary",
+              "top": 485.75,
+              "bottom": 531.75
+            },
+            {
+              "selector": "#docket-heading",
+              "top": 697.9375,
+              "bottom": 732.9375
+            },
+            {
+              "selector": ".market-toolbar",
+              "top": 758.9375,
+              "bottom": 806.9375
+            },
+            {
+              "selector": ".empty-state h3",
+              "top": 847.9375,
+              "bottom": 888.53125
+            }
+          ],
+          "sizes": [
+            "16px",
+            "24px",
+            "12px",
+            "14px",
+            "73.44px",
+            "28px"
+          ]
+        }
+      ]
+    },
     {
       "name": "production export loads manifest, pinned ABI JSON and real read selectors at /preview/",
       "status": "PASS",
@@ -10,6 +86,21 @@
         "width": 1440,
         "scroll": 1440,
         "overflow": []
+      }
+    },
+    {
+      "name": "static social metadata loads the exported 1200 × 630 PNG at a subpath",
+      "status": "PASS",
+      "detail": {
+        "source": "./share.png",
+        "status": 200,
+        "mime": "image/png",
+        "width": 1200,
+        "height": 630,
+        "card": "summary_large_image",
+        "twitterImage": "./share.png",
+        "declaredWidth": "1200",
+        "declaredHeight": "630"
       }
     },
     {

@@ -1,0 +1,25 @@
+
+> the-tribunal-web@1.0.0 test
+> tsx --test tests/*.test.ts
+
+✔ implementation-derived canonical ABI hashes match both handoff hashes (7.250404ms)
+✔ amounts reject zero, negative, scientific notation, excess precision and overflow (0.792251ms)
+✔ closed open-enum markets are never represented as accepting bets (0.288374ms)
+✔ payout matches losing-pool fees, creator bond, void refund and last-winner rounding (1.024725ms)
+✔ create JSON escapes user text and fixes five-seat bool/panel defaults and observation (0.789941ms)
+✔ slippage uses integer rounding and rejects unbounded tolerances (0.289784ms)
+✔ swap routing preserves every attested pool field and derives both directions (3.835044ms)
+✔ extended swap tuple includes minHopPrice zero and native input sends value (0.713611ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 379.698045
+npm notice
+npm notice New minor version of npm available! 11.6.0 -> 11.21.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.0
+npm notice To update run: npm install -g npm@11.21.0
+npm notice
